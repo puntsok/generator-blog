@@ -1,0 +1,6 @@
+.idea
+public/.htaccess
+*.sublime-workspace
+node_modules
+.sass-cache
+**/*.DS_Store

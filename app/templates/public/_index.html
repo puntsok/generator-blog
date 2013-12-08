@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" class="no-touch" data-indexhtmlversion="0.3.4">
+    <head>
+        <title>Change Me</title>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, height=device-height, maximum-scale=1.0, user-scalable=no" />
+
+        <!-- CORDOVA: -->
+          <!-- <script type="text/javascript" src="phonegap.js"></script> -->
+        <!-- /CORDOVA: -->
+    </head>
+    <body>
+        <div class="bootstrap">
+            <div class="spinner">Loading...
+            </div>
+        </div>
+        <script>
+            (function() {
+                var 
+                    d = document,
+                    h = d.querySelector('head'),
+                    s = d.createElement('script');
+
+                s.src = 'js/bootstrap.js?' + (new Date()).getTime();
+                h.appendChild(s);
+            })();
+        </script>
+    </body>
+</html>

@@ -8,7 +8,7 @@
   "homepage": "https://github.com/puntsok/generator-blog",
   "bugs": "https://github.com/puntsok/generator-blog/issues",
   "author": {
-    "name": "",
+    "name": "Christopher E. Walker",
     "email": "",
     "url": "https://github.com/puntsok"
   },
@@ -21,7 +21,9 @@
     "test": "mocha"
   },
   "dependencies": {
-    "yeoman-generator": "~0.13.0"
+    "yeoman-generator": "~0.13.0",
+    "chalk": "~0.3.0",
+    "execSync": "~1.0.1-pre"
   },
   "devDependencies": {
     "mocha": "~1.12.0"

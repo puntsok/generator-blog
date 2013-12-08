@@ -1,5 +1,17 @@
 {
-  "name": "package",
+  "name": "puntsok-changeme",
+  "description": "Change this description",
   "version": "0.0.0",
-  "dependencies": {}
+  "dependencies": {},
+  "devDependencies": {
+    "grunt": "*",
+    "grunt-contrib-requirejs": "*",
+    "grunt-contrib-handlebars": "*",
+    "grunt-contrib-jshint": "*",
+    "grunt-contrib-watch": "*",
+    "grunt-string-replace": "*",
+    "grunt-contrib-sass": "*",
+    "grunt-md2html": "*",
+    "grunt-contrib-concat": "*"
+  }
 }

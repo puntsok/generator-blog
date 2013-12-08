@@ -1,6 +1,15 @@
 {
-  "name": "package",
-  "version": "0.0.0",
-  "dependencies": {}
+  "name": "Student Info Client",
+  "version": "0.0.1",
+  "main": "public/js/main.js",
+  "dependencies": {
+    "jquery": "*",
+    "underscore": "*",
+    "backbone": "*",
+    "requirejs": "*",
+    "handlebars.js": "1.0.12",
+    "scss-mixins": "*",
+    "eventEmitter": "*"
+  }
 }
 

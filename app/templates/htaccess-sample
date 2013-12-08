@@ -1,0 +1,30 @@
+Header set X-UA-Compatible "IE=edge"
+
+<ifModule mod_headers.c>
+  Header unset ETag
+</ifModule>
+FileETag None
+
+#<FilesMatch "\.(html?|txt|css|js|php|pl)$">
+#   SetOutputFilter DEFLATE
+#</FilesMatch>
+
+<FilesMatch "\.(js|css)$">
+    SetOutputFilter DEFLATE
+</FilesMatch>
+
+<FilesMatch "\.js$">
+    Header set Cache-Control "max-age=604800, public"
+</FilesMatch>
+<FilesMatch "\.css$">
+    Header set Cache-Control "max-age=604800, public"
+</FilesMatch>
+<FilesMatch "\.ico$">
+    Header set Cache-Control "max-age=604800, public"
+</FilesMatch>
+
+<FilesMatch "\.html$">
+    Header set Cache-Control "max-age=0, no-cache, no-store, must-revalidate"
+    Header set Pragma "no-cache"
+    Header set Expires "Wed, 11 Jan 1984 05:00:00 GMT"
+</FilesMatch>
